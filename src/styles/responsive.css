@@ -1,0 +1,21 @@
+/* src/styles/responsive.css */
+@media screen and (max-width: 768px) {
+  .custom-header {
+    padding: 8px 16px !important;
+    flex-direction: column !important;
+  }
+
+  .header-btns {
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .header-logo-search {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

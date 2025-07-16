@@ -8,6 +8,8 @@ import OurServices from "./Component/OurServices";
 import OurProducts from "./Component/OurProduct";
 import OurProductMen from "./Component/OurProductMen";
 import ProtectedRoute from "./Component/ProtectedRoute";
+// main.jsx or App.jsx
+import "./styles/responsive.css";
 
 function App() {
   return (

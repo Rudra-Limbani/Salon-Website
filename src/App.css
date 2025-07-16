@@ -4,6 +4,13 @@
   padding: 2rem;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .ant-layout-sider {
+    position: fixed !important;
+    z-index: 1000;
+  }
+}
+
 
 .logo {
   height: 6em;

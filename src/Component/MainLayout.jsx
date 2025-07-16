@@ -14,10 +14,12 @@ function MainLayout() {
   return (
     <Layout>
       <Sidebar collapsed={collapsed} onCollapse={setCollapsed} />
+      <HeaderData collapsed={collapsed} />
 
       <Layout
         style={{
-          marginLeft: sidebarWidth,
+          // marginLeft: sidebarWidth,
+          marginLeft: collapsed ? 0 : 70,
           transition: "margin-left 0.3s ease",
         }}
       >
@@ -32,7 +34,6 @@ function MainLayout() {
           }}
         >
           <HeaderData collapsed={collapsed} />
-
         </div>
 
         <Content
