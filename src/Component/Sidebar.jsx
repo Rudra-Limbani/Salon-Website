@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useState } from "react";
 import { Layout, Menu, Modal } from "antd";
 import {
@@ -93,7 +91,7 @@ function Sidebar({ collapsed, onCollapse }) {
       collapsible
       collapsed={collapsed}
       onCollapse={onCollapse}
-      width={100}
+      width={mobileView ? 100 : 200}
       collapsedWidth={mobileView ? 0 : 80}
       breakpoint="md"
       onBreakpoint={(broken) => onCollapse(broken)}
@@ -114,8 +112,8 @@ function Sidebar({ collapsed, onCollapse }) {
           <img
             src={logo}
             alt="Logo"
+            width={collapsed ? 70 : 100}
             style={{
-              width: "100px",
               transition: "0.3s ease-in-out",
               filter: "brightness(1.5)",
             }}

@@ -18,7 +18,7 @@ function HeaderData({ collapsed }) {
         style={{
           position: "fixed",
           top: 0,
-          left: collapsed ? 0 : 100,
+          left: collapsed ? 80 : 200,
           right: 0,
           height: 70,
           background: "linear-gradient(to right, #4f3c3c, #1c1c1c)",

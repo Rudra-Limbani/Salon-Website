@@ -19,7 +19,7 @@ function MainLayout() {
       <Layout
         style={{
           // marginLeft: sidebarWidth,
-          marginLeft: collapsed ? 0 : 70,
+          marginLeft: collapsed ?80 :200,
           transition: "margin-left 0.3s ease",
         }}
       >
